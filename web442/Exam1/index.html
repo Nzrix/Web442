@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>มาเล่นกันเถอะ</h1>
+        <p class="description">(ระหว่าง 1 - 21)</p>
+      </header>
+      <div class="game">
+        <div class="game-info">
+          <div class="secret">?</div>
+        </div>
+        <main>
+          <section class="left">
+            <input type="number" placeholder="ืทายได้ 1 - 21" class="guess" />
+            <button class="btn check">เอาเลขนี้แหละ</button>
+            <button class="btn Reset">เอาใหม่</button>
+          </section>
+          <section class="right">
+            <p class="message">เอ้า!! ทายมา</p>
+            <p class="label-score">คะแนน: <span class="score">10</span></p>
+            <p class="label-hightscore">
+              คะแนนสูงสุด: <span class="hightscore">0</span>
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="scirpt.js"></script>
+  </body>
+</html>

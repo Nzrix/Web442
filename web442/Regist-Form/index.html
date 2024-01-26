@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- สร้างฟอร์มสำหรับกรอก Name, Gender, (radio), Interests (checkboxes), Country (select)  -->
+    <form id="registrationForm">
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <br />
+
+      <!-- Gender -->
+      <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required />
+        <label for="other">Other</label>
+      </div>
+
+      <br />
+
+      <!-- Interests -->
+      <label for="interests">Interests:</label>
+      <input type="checkbox" id="coding" name="interest" value="Coding" />
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="reading" name="interest" value="Reading" />
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="traveling" name="interest" value="Traveling" />
+      <label for="traveling">Traveling</label>
+
+      <br />
+
+      <!-- Country -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+        <option value="th">TH</option>
+      </select>
+
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
